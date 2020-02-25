@@ -10,7 +10,7 @@
 <p>Cookie<br>Cookie是当主机访问Web服务器时，由 Web 服务器创建的，将信息存储在用户计算机上的文件。一般网络用户习惯用其复数形式 Cookies，指某些网站为了辨别用户身份、进行 Session 跟踪而存储在用户本地终端上的数据，而这些数据通常会经过加密处理。<br>可以用burp suite抓包看到cooike也能查看http响应包，在网络一栏可以看到访问的数据包</p>
 </blockquote>
 <blockquote>
-<p>disabled<br>disabled 属性规定应该禁用的 <input>元素。被禁用的 input 元素是无法使用和无法点击的。可以设置 disabled 属性，直到满足某些其他的条件为止（比如选择了一个复选框等等）。然后，就需要通过 JavaScript 来删除 disabled 值，将 input 元素的值切换为可用。<br><em>注释：disabled 属性无法与 <input type="hidden"> 一起使用</em><br>在本题中f12后直接删除disabled=””或者审计from表单代码，使用hackbar，用post方式传递auth=flag，同样可以获得flag。</p>
+<p>disabled<br>disabled 属性规定应该禁用的 input元素。被禁用的 input 元素是无法使用和无法点击的。可以设置 disabled 属性，直到满足某些其他的条件为止（比如选择了一个复选框等等）。然后，就需要通过 JavaScript 来删除 disabled 值，将 input 元素的值切换为可用。<br><em>注释：disabled 属性无法与 input type=”hidden” 一起使用</em><br>在本题中f12后直接删除disabled=””或者审计from表单代码，使用hackbar，用post方式传递auth=flag，同样可以获得flag。</p>
 </blockquote>
 ]]></content>
   </entry>
