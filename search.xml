@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>buuctf杂项</title>
+    <url>/2020/04/11/buuctf%E6%9D%82%E9%A1%B9/</url>
+    <content><![CDATA[<p>#####N种方法解决#####<br>用winhex或者改后缀txt，发现data:image/jpg;base64,iVBORw0K… 这是一个base64格式图片，直接在线解码得到二维码图片扫出flag<br><em>base64转图片在线链接:<a href="https://tool.jisuapi.com/base642pic.html" target="_blank" rel="noopener">https://tool.jisuapi.com/base642pic.html</a></em></p>
+<p>#####金三胖#####<br>用stegsolve打开，Analyse中的Frame Browser查看动态图每一帧，第21、51、79帧连在一起</p>
+<p>#####镜子里的世界#####<br>用stegsolve打开，发现Red、Green、Blue的0通道的图片最上端有东西，用Data Extract查看这三个通道结合的东西，发现flag</p>
+<p>#####mf</p>
+]]></content>
+  </entry>
+  <entry>
     <title>outguess</title>
     <url>/2020/03/29/outguess/</url>
     <content><![CDATA[<p><em>在BJD比赛上一道misc（圣火昭昭）接触到了outhuess</em></p>
