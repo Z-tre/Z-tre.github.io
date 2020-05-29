@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>一些md语法</title>
-    <url>/2020/05/28/%E4%B8%80%E4%BA%9Bmd%E8%AF%AD%E6%B3%95/</url>
+    <url>/2020/05/28/%E4%B8%80%E4%BA%9B.md%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p><strong>.md</strong>即markdown文件的基本常用编写语法,本blog就是用此语法来编写，因为经常忘互联网有记忆我没有所以做了个大致汇总。<br><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh2a1C3*qbX2tRdrF6iE.bmuSVu498alY8394gUS6LEZch*WlFS18ZsOPISXTVoJ79gjlsxZKHcXcjrSg805Pj8I!/b&bo=8ADkAAAAAAARFzQ!&rf=viewer_4" alt="avatar"></p>
 <h3 id="基本符号"><a href="#基本符号" class="headerlink" title="基本符号"></a>基本符号</h3><p><strong>* - + &gt;</strong><br>基本上所有的markdown标记都是基于这四个符号或组合，需要注意的是，如果以基本符号开头的标记，注意基本符号后有一个用于分割标记符和内容的空格。</p>
 <h4 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h4><p>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符<br><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/NZ9C4PTRAOGVNvAxFZDwt7yB32xKTEgnP326IvDGnWKkZjde21iIbd8TI9z92NEG2vV9KJY0zLOrs1xM2hjVuA!!/mnull&bo=tAJPAAAAAAADB9s!&rf=photolist&t=5" alt="avatar"><br>输出结果为：<br><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOhylb1KSrO1z35BFGd5C89*qST4u7Fi3zYhN0TyfFSIYv*RMOszVzF3aEwe78yXud3zH6Q8pGCxaWsoCZj*wdtlQ!/b&bo=jwK8AAAAAAADFwM!&rf=viewer_4" alt="avatar"><br>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：<br><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOhwGFSPSdocaNrVZHv*zdeLOd7nSYNABuNMvEL1.BA*Z3MMw74ueIhndF42gGIo7FMvgjCNS632hp97192kowgeA!/b&bo=UgNJAQAAAAADFys!&rf=viewer_4" alt="avater"></p>
