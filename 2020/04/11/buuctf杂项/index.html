@@ -65,7 +65,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">137</span>
+            <span class="post-count">256</span>
         </span>
     </span>
 
@@ -105,7 +105,16 @@
 <h5 id="N种方法解决"><a href="#N种方法解决" class="headerlink" title="N种方法解决"></a>N种方法解决</h5><p>用winhex或者改后缀txt，发现data:image/jpg;base64,iVBORw0K… 这是一个base64格式图片，直接在线解码得到二维码图片扫出flag<br><em>base64转图片在线链接:<a href="https://tool.jisuapi.com/base642pic.html" target="_blank" rel="noopener">https://tool.jisuapi.com/base642pic.html</a></em></p>
 <h5 id="金三胖"><a href="#金三胖" class="headerlink" title="金三胖"></a>金三胖</h5><p>用stegsolve打开，Analyse中的Frame Browser查看动态图每一帧，第21、51、79帧连在一起</p>
 <h5 id="镜子里的世界"><a href="#镜子里的世界" class="headerlink" title="镜子里的世界"></a>镜子里的世界</h5><p>用stegsolve打开，发现Red、Green、Blue的0通道的图片最上端有东西，用Data Extract查看这三个通道结合的东西，发现flag</p>
-<h5 id="mf"><a href="#mf" class="headerlink" title="mf"></a>mf</h5>
+<h5 id="zip伪加密"><a href="#zip伪加密" class="headerlink" title="zip伪加密"></a>zip伪加密</h5><p><em>原理：zip伪加密是在文件头的加密标志位做修改，进而再打开文件时被识别为加密压缩包</em></p>
+<p><a href="https://blog.csdn.net/wclxyn/article/details/7288994" target="_blank" rel="noopener">zip文件</a></p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh4C6g4FWwkL156VgH6HQlzNX.Q0vVP.eQTm2rBuhZ61B2gXEtZQNhEhvvkH61iolp2GF7oBxWis2WAs6GmTNDU4!/b&bo=gwIQAQAAAAADF6I!&rf=viewer_4" alt="ava"></p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh8rTulrs4hSfPdqxnMFaZBil.eITZH7qr03fszn64g2yme03JANw*59MtlW50H3lrJYeDD90pCsxJn82xQ8bLiI!/b&bo=awLJAAAAAAADF5I!&rf=viewer_4" alt="ava"></p>
+<p>​                                                <em>转侵删</em></p>
+<p>一般在压缩源文件数据区全局方式位标记处，真加密为 09 00，伪加密为00 00，而后面将压缩源文件目录区全局方式位标记处从 00 00 改为 09 00就完成了伪加密</p>
+<p>本题为<img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/NZ9C4PTRAOGVNvAxFZDwt*qEtLiu.X7zqTAXEk7LNB8Rnma7szUAN*Yacsh6xNRWIj78cGdFW7oTbb3A1RIXTA!!/b&bo=hgFhAAAAAAADB8Q!&rf=viewer_4" alt="jie"></p>
+<p>→<img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh8XRYMV6VgJ3oSzJRWAS1XvfYy*TWXTpuvDaF5NNsn2Oodo*WwLEfy4LvN*pekyjGa98fsuUcBd6K9Eu0K7bMkE!/b&bo=ggFcAAAAAAADF.0!&rf=viewer_4" alt="jie"></p>
+<p>再解压即可</p>
+
       
       <!-- reward -->
       
