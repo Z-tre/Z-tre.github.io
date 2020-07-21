@@ -100,18 +100,34 @@
     <content><![CDATA[<p>buuctf杂项的一些wp</p>
 <a id="more"></a>
 
-<h5 id="N种方法解决"><a href="#N种方法解决" class="headerlink" title="N种方法解决"></a>N种方法解决</h5><p>用winhex或者改后缀txt，发现data:image/jpg;base64,iVBORw0K… 这是一个base64格式图片，直接在线解码得到二维码图片扫出flag<br><em>base64转图片在线链接:<a href="https://tool.jisuapi.com/base642pic.html" target="_blank" rel="noopener">https://tool.jisuapi.com/base642pic.html</a></em></p>
-<h5 id="金三胖"><a href="#金三胖" class="headerlink" title="金三胖"></a>金三胖</h5><p>用stegsolve打开，Analyse中的Frame Browser查看动态图每一帧，第21、51、79帧连在一起</p>
-<h5 id="镜子里的世界"><a href="#镜子里的世界" class="headerlink" title="镜子里的世界"></a>镜子里的世界</h5><p>用stegsolve打开，发现Red、Green、Blue的0通道的图片最上端有东西，用Data Extract查看这三个通道结合的东西，发现flag</p>
+<h5 id="N种方法解决"><a href="#N种方法解决" class="headerlink" title="N种方法解决"></a>N种方法解决</h5><p>​    用winhex或者改后缀txt，发现data:image/jpg;base64,iVBORw0K… 这是一个base64格式图片，直接在线解码得到二维码图片扫出flag<br><em>base64转图片在线链接:<a href="https://tool.jisuapi.com/base642pic.html" target="_blank" rel="noopener">https://tool.jisuapi.com/base642pic.html</a></em></p>
+<h5 id="金三胖"><a href="#金三胖" class="headerlink" title="金三胖"></a>金三胖</h5><p>​    用stegsolve打开，Analyse中的Frame Browser查看动态图每一帧，第21、51、79帧连在一起</p>
+<h5 id="镜子里的世界"><a href="#镜子里的世界" class="headerlink" title="镜子里的世界"></a>镜子里的世界</h5><p>​    用stegsolve打开，发现Red、Green、Blue的0通道的图片最上端有东西，用Data Extract查看这三个通道结合的东西，发现flag</p>
 <h5 id="zip伪加密"><a href="#zip伪加密" class="headerlink" title="zip伪加密"></a>zip伪加密</h5><p><em>原理：zip伪加密是在文件头的加密标志位做修改，进而再打开文件时被识别为加密压缩包</em></p>
 <p><a href="https://blog.csdn.net/wclxyn/article/details/7288994" target="_blank" rel="noopener">zip文件</a></p>
 <p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh4C6g4FWwkL156VgH6HQlzNX.Q0vVP.eQTm2rBuhZ61B2gXEtZQNhEhvvkH61iolp2GF7oBxWis2WAs6GmTNDU4!/b&bo=gwIQAQAAAAADF6I!&rf=viewer_4" alt="ava"></p>
 <p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh8rTulrs4hSfPdqxnMFaZBil.eITZH7qr03fszn64g2yme03JANw*59MtlW50H3lrJYeDD90pCsxJn82xQ8bLiI!/b&bo=awLJAAAAAAADF5I!&rf=viewer_4" alt="ava"></p>
 <p>​                                                <em>转侵删</em></p>
-<p>一般在压缩源文件数据区全局方式位标记处，真加密为 09 00，伪加密为00 00，而后面将压缩源文件目录区全局方式位标记处从 00 00 改为 09 00就完成了伪加密</p>
+<p>​    一般在压缩源文件数据区全局方式位标记处，真加密为 09 00，伪加密为00 00，而后面将压缩源文件目录区全局方式位标记处从 00 00 改为 09 00就完成了伪加密</p>
 <p>本题为<img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/NZ9C4PTRAOGVNvAxFZDwt*qEtLiu.X7zqTAXEk7LNB8Rnma7szUAN*Yacsh6xNRWIj78cGdFW7oTbb3A1RIXTA!!/b&bo=hgFhAAAAAAADB8Q!&rf=viewer_4" alt="jie"></p>
 <p>→<img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh8XRYMV6VgJ3oSzJRWAS1XvfYy*TWXTpuvDaF5NNsn2Oodo*WwLEfy4LvN*pekyjGa98fsuUcBd6K9Eu0K7bMkE!/b&bo=ggFcAAAAAAADF.0!&rf=viewer_4" alt="jie"></p>
 <p>再解压即可</p>
+<h5 id="二维码"><a href="#二维码" class="headerlink" title="二维码"></a>二维码</h5><p>​    给的二维码图片扫不出信息，把图片后缀改为压缩包形式发现有加密，用winhex打开，分离文件，<strong>压缩包的文件头是PK</strong></p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh*HLYgnOuAHrBNDOJ00IAcz9ZAAVdo3HEsZFVzvzRj3oQTXFI6LcgpYkko2mSP32kupdCSvkRiAdnqXdcAs3p9U!/b&bo=HAU9AwAAAAADJyU!&rf=viewer_4" alt="图片"></p>
+<p>提取出来再改为zip格式</p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh9DiKtyU6DL0Gj3KEOlL*cr1frbGItZceIa6jKyDAXyvSSquUWMh5lEOeCRVcgr5hQQIbYeURbDv.BqPEgLS5hs!/b&bo=HAU9AwAAAAADFxU!&rf=viewer_4" alt="zip"></p>
+<p>破解的得</p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOhxUeK7WFhlaWVhwWoFNXC4kKBPjCvR4haHlLLCpdy11Iqsu8CrZaAMFHlDPKSsYgFdjm3lVfbmeIcTND3bJFHRc!/b&bo=KQLxAAAAAAADF.g!&rf=viewer_4" alt="密码"></p>
+<p>得到flag</p>
+<h5 id="ningen"><a href="#ningen" class="headerlink" title="ningen"></a>ningen</h5><p>​    由题目推测应该又是个4位数加密，同二维码方法。</p>
+<h5 id="爱因斯坦"><a href="#爱因斯坦" class="headerlink" title="爱因斯坦"></a>爱因斯坦</h5><p>​    用winhex打开有一段很长的空白，</p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/NZ9C4PTRAOGVNvAxFZDwty2Dqb3vv.YbdJO4CfeIL*T2nM1g.eM6o9W7LT6HHVhcLWA4ceQXXJobpwneVZ6HaA!!/b&bo=HAU9AwAAAAADBwU!&rf=viewer_4" alt="pa"></p>
+<p>这里的格式很可疑，图片改为zip发现有加密文件，同上分离出加密压缩包，但是工具破解不出来，试试把图中的this_is_not_password作为密码，打开</p>
+<p><em>*按照上面的方法虽然也能分理出加密文件，但是手动分离 就是这一次有几个干扰项试了几次才分离出来，以后还是要学习工具的使用</em></p>
+<h5 id="LSB"><a href="#LSB" class="headerlink" title="LSB"></a>LSB</h5><p><strong>LSB</strong>（Least Significant Bit），意为最低有效位；<strong>MSB</strong>（Most Significant Bit），意为最高有效位。通常，MSB位于二进制数的最左侧，LSB位于二进制数的最右侧。若MSB=1，则表示数据为负值，若MSB=0，则表示数据为正。</p>
+<p><strong>LSB图片隐写</strong>：png图片是一种无损压缩的位图片形格式，也只有在无损压缩或者无压缩的图片（BMP）上实现lsb隐写。如果图像是jpg图片的话，就没法使用lsb隐写了，原因是jpg图片对像数进行了有损压缩，我们修改的信息就可能会在压缩的过程中被破坏。而png图片虽然也有压缩，但却是无损压缩，这样我们修改的信息也就能得到正确的表达，不至于丢失。BMP图片一般是特别的大的，因为BMP把所有的像数都按原样储存，没有进行压缩。<br>png图片中的图像像数一般是由RGB三原色（红绿蓝）组成，每一种颜色占用8位，取值范围为0x00~0xFF（0-255），即有256种颜色，一共包含了256的3次方的颜色，即16777216种颜色。而人类的眼睛可以区分约1000万种不同的颜色，这就意味着人类的眼睛无法区分余下的颜色大约有6777216种。<br>LSB隐写就是修改RGB颜色分量的最低二进制位也就是最低有效位（LSB），而人类的眼睛不会注意到这前后的变化，每个像数可以携带3比特的信息。<br>一幅完整的图像，红色绿色蓝色三个通道缺一不可。一幅图像，如果关闭了红色通道，那么图像就偏青色。如果关闭了绿色通道，那么图像就偏洋红色。如果关闭了蓝色通道，那么图像就偏黄色。当然还有个Alpha通道，是一个8位的灰度通道，也可以理解为透明度（粗糙的理解）。</p>
+<p>使用stegsolve打开图片，按右方向键查看各通道显示的图像。一般有些题目会在某一个图像通道中直接显示出flag。<br>这道题，题目已经很明显了，用stegsolve打开图片，按右方向键查看各通道显示的图像，可以发现Red，Blue，Green的0通道的图片上方有东西，用Data Extract查看这三个通道结合起来的东西，Save Bin将图片保存为png图片，发现是一个二维码，扫一扫即可得到flag。</p>
+<p><em>参考文章讲的比较全面，这里直接转载，附上文章链接：<a href="https://blog.csdn.net/ITmincherry/article/details/99047250" target="_blank" rel="noopener">https://blog.csdn.net/ITmincherry/article/details/99047250</a></em></p>
 ]]></content>
   </entry>
   <entry>
