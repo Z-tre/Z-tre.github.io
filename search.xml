@@ -128,6 +128,13 @@
 <p><strong>LSB图片隐写</strong>：png图片是一种无损压缩的位图片形格式，也只有在无损压缩或者无压缩的图片（BMP）上实现lsb隐写。如果图像是jpg图片的话，就没法使用lsb隐写了，原因是jpg图片对像数进行了有损压缩，我们修改的信息就可能会在压缩的过程中被破坏。而png图片虽然也有压缩，但却是无损压缩，这样我们修改的信息也就能得到正确的表达，不至于丢失。BMP图片一般是特别的大的，因为BMP把所有的像数都按原样储存，没有进行压缩。<br>png图片中的图像像数一般是由RGB三原色（红绿蓝）组成，每一种颜色占用8位，取值范围为0x00~0xFF（0-255），即有256种颜色，一共包含了256的3次方的颜色，即16777216种颜色。而人类的眼睛可以区分约1000万种不同的颜色，这就意味着人类的眼睛无法区分余下的颜色大约有6777216种。<br>LSB隐写就是修改RGB颜色分量的最低二进制位也就是最低有效位（LSB），而人类的眼睛不会注意到这前后的变化，每个像数可以携带3比特的信息。<br>一幅完整的图像，红色绿色蓝色三个通道缺一不可。一幅图像，如果关闭了红色通道，那么图像就偏青色。如果关闭了绿色通道，那么图像就偏洋红色。如果关闭了蓝色通道，那么图像就偏黄色。当然还有个Alpha通道，是一个8位的灰度通道，也可以理解为透明度（粗糙的理解）。</p>
 <p>使用stegsolve打开图片，按右方向键查看各通道显示的图像。一般有些题目会在某一个图像通道中直接显示出flag。<br>这道题，题目已经很明显了，用stegsolve打开图片，按右方向键查看各通道显示的图像，可以发现Red，Blue，Green的0通道的图片上方有东西，用Data Extract查看这三个通道结合起来的东西，Save Bin将图片保存为png图片，发现是一个二维码，扫一扫即可得到flag。</p>
 <p><em>参考文章讲的比较全面，这里直接转载，附上文章链接：<a href="https://blog.csdn.net/ITmincherry/article/details/99047250" target="_blank" rel="noopener">https://blog.csdn.net/ITmincherry/article/details/99047250</a></em></p>
+<h5 id="穿越时空的思念"><a href="#穿越时空的思念" class="headerlink" title="穿越时空的思念"></a>穿越时空的思念</h5><p>​    音乐明显能听出有一段电码声音，应该是摩斯电码，用Audacity</p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/YPhsM5mUO5.bFmyDEhTOh.ZqYEOktTG9z.yzxW4E*fUaDqsOeVHwCcDAeWbZODgNJuHMQ.Y5.LUg1s00F9*jMYqwPipBRl9lnh6Yx5852nE!/b&bo=hQSLAwAAAAADJws!&rf=viewer_4" alt="au"></p>
+<p>右声道里就是一段电码，扣下来</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0010 11111 00111 11110 1000 100 10000 0010 00000 00000 01111 01111 00011 11110 0 0 100 0 1000 11100 0 00001 00000 01 01111 11000 00000 1000 11111 11000 11100 10000</span></pre></td></tr></table></figure>
+
+
+
 ]]></content>
   </entry>
   <entry>
