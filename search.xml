@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>一些基础</title>
+    <url>/2020/08/17/%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">诶，还没写完呢.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="42d4fbd5d342e6e8c6f42a5c8ea8bab7268a197507f91c9566daca259a865bcf">eea1d49c96ed04daccb2dcb3623004bd</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+  </entry>
+  <entry>
     <title>一些.md语法</title>
     <url>/2020/05/28/%E4%B8%80%E4%BA%9B.md%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p><strong>.md</strong>即markdown文件的基本常用编写语法,本blog就是用此语法来编写，因为经常忘互联网有记忆我没有所以做了个大致汇总。</p>
