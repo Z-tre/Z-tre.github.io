@@ -133,8 +133,24 @@
 <p>右声道里就是一段电码，扣下来</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0010 11111 00111 11110 1000 100 10000 0010 00000 00000 01111 01111 00011 11110 0 0 100 0 1000 11100 0 00001 00000 01 01111 11000 00000 1000 11111 11000 11100 10000</span></pre></td></tr></table></figure>
 
+<p>摩斯电码翻译即得到flag</p>
+<h5 id="小明的保险箱"><a href="#小明的保险箱" class="headerlink" title="小明的保险箱"></a>小明的保险箱</h5><p>题目说密码是四位纯数字，猜测又是一个加密破解，直接改zip爆破。</p>
+<h5 id="假如给我三天光明"><a href="#假如给我三天光明" class="headerlink" title="假如给我三天光明"></a>假如给我三天光明</h5><p>打开是一张图片和一个加密的压缩包，图片下方的符号应该是一种信息，结合题目和网上查询是盲文，对照翻译为kmdonowg，输入打开压缩包，音频是一段摩斯密码，扣下来(要是能自动扣下来就更好了 害)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1010 1 0010 011 0110 0 00 11111 11100 11000 00011 00111 001100 00111 00011 100 1100</span></pre></td></tr></table></figure>
 
-
+<p>翻译ctfwpei08732?23dz去掉ctf即为flag</p>
+<h5 id="隐藏的钥匙"><a href="#隐藏的钥匙" class="headerlink" title="隐藏的钥匙"></a>隐藏的钥匙</h5><p>看题目眼瘸还以为要改宽高(雾)，后来直接在winhex搜到了flag</p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/NZ9C4PTRAOGVNvAxFZDwt5Te69TwDv0uUYGiiMsUdE95HCyU4A9thnUDc9kxDrudM5*W1iRZXngMEeOeeXEsTQ!!/b&bo=mwKFAAAAAAADBz4!&rf=viewer_4" alt="flag"></p>
+<p>base64解码得flag。</p>
+<h5 id="FLAG"><a href="#FLAG" class="headerlink" title="FLAG"></a>FLAG</h5><p>用stegsolve打开，red green blue0发现应该是一个压缩包，save bin为zip，解压后文件改为txt格式，里面有flag</p>
+<p><em>*这题在网上查询看是二进制解法，后面学了再补上</em></p>
+<h5 id="另外一个世界"><a href="#另外一个世界" class="headerlink" title="另外一个世界"></a>另外一个世界</h5><p>用winhex打开最后有一串二进制，转码得到flag</p>
+<h5 id="被嗅探的流量"><a href="#被嗅探的流量" class="headerlink" title="被嗅探的流量"></a>被嗅探的流量</h5><p>用wireshark打开，过滤http，看到了用户上传了一个jpg，找一下能看到flag</p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/45NBuzDIW489QBoVep5mcebyFwfRYJuwYrm4hBuGA1U*NlvgyA6euxQZvQCKHnSxATblgM4qUHSmRW8TDpJu6BDfkuqLbIUEhebwuyWfu90!/b&bo=fgN3AgAAAAADFzo!&rf=viewer_4" alt="liu"></p>
+<p><em>*关于wireshark的使用还是很不熟悉，后续学习再补上</em></p>
+<h5 id="wireshark"><a href="#wireshark" class="headerlink" title="wireshark"></a>wireshark</h5><p>提示的flag应该在登录的地方，找到http发现里面有一个login包，开始没找到的还以为找错了，一个个轮下来发现flag</p>
+<p><img src="http://m.qpic.cn/psc?/V146OGAz0sxlDK/45NBuzDIW489QBoVep5mcREtaD*znTOKfjex6Bcv5qYwHGvb8pWMkXJmkbPW6e6da5Ky3uK8DcnBIy.nby4x1h*SbAs0FKMBK6sE*MdTTf4!/b&bo=fgN3AgAAAAADFzo!&rf=viewer_4" alt="login"></p>
+<h5 id="easycap"><a href="#easycap" class="headerlink" title="easycap"></a>easycap</h5><p>TCP流追踪</p>
 ]]></content>
   </entry>
   <entry>
